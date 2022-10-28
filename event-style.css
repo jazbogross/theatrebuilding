@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Lora&display=swap');
+body {
+    background-color: white;
+    margin: 0px;
+    min-height: 100vh;
+    font-family: 'Lora', serif;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#wrapper {
+    height: 100vh;
+}
