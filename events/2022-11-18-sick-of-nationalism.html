@@ -1,53 +1,18 @@
-<!DOCTYPE html>
-<html>
-   	<head> 
-      	<title>theatrebuilding | Sick of Nationalism</title>
-          <link rel="stylesheet" href="event-style.css">
-        <meta name="google" content="notranslate" />
-   	</head>
-	<body>
-        <div id="wrapper" class="flex-center">
-            
+import unittest
+
+from leap import count_leap_years
 
 
+class TestLeap(unittest.TestCase):
 
+    def test_count_leap_years_from_2018_to_2021_returns_one(self):
+        # Arrange
+        start = 2018
+        end = 2021
+        expected = 1  # only one leap year in between: 2020
 
-		
-<main class="Loop js-loop">
-  <section class="one">
-    <h1>One</h1>
-  </section>
-  <section class="two">
-    <h1>For</h1>
-  </section>
-  <section class="three">
-    <h1>All</h1>
-  </section>
-  <section class="four">
-    <h1>And</h1>
-  </section>
-  <section class="three">
-    <h1>All</h1>
-  </section>
-  <section class="two">
-    <h1>For</h1>
-  </section>
+        # Act
+        actual = count_leap_years(start, end)  # the actually computed value
 
-  <!--
-  These blocks are the same as the first blocks to get that looping illusion going.
-  You need to add clones to fill out a full viewport height.
-  -->
-  <section class="one is-clone">
-    <h1>One</h1>
-  </section>
-  <section class="two is-clone">
-    <h1>For</h1>
-  </section>
-</main>
-		
-		
- <script src="/infinite.js" async></script>
-            
-        </div>
-	</body>
-</html>
+        # Assert
+        self.assertEqual(expected, actual)
