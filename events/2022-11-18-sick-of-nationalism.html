@@ -77,7 +77,10 @@
 			<p> Spectactor: Says something else</p>	<p> Spectactor: Says something</p>
 			<p> Spectactor: Says something else</p>
 	
-window.scrollTo({ top: 0, behavior: 'smooth' });
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
 
             <!-- din html kode her -->
 
