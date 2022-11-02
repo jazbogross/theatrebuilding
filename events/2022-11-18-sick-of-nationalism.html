@@ -77,10 +77,11 @@
 			<p> Spectactor: Says something else</p>	<p> Spectactor: Says something</p>
 			<p> Spectactor: Says something else</p>
 	
-$("a[href='#top']").click(function() {
-  $("html, body").animate({ scrollTop: 0 }, "slow");
-  return false;
-});
+if (window.scrollY) {
+  window.scroll(0, 0);  // reset the scroll position to the top left of the document.
+}
+
+window.scrollByPages(1);
 
             <!-- din html kode her -->
 
