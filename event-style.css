@@ -1,77 +1,9 @@
-html,
-body {
-  height: 100%;
-  overflow: hidden;
-}
-
-if (window.scrollY) {
-  window.scroll(0, 0);  // reset the scroll position to the top left of the document.
-}
-
-window.scrollByPages(1);
-
-.Loop {
-  position: relative;
-  height: 100%;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-
-section {
-  position: relative;
-  text-align: center;
-  min-height: 300px;
-  max-height: 700px;
-  height: 80%;
-}
-
-::scrollbar {
-  display: none;
-}
-
-
-*{padding:0;margin:0;}
-
-body{
-	font-family:Verdana, Geneva, sans-serif;
-	font-size:18px;
-	background-color:#CCC;
-}
-
-
-
 
 body {
-  font-family: "Avenir Next", Helvetica, sans-serif;
-  font-weight: normal;
-  font-size: 100%;
+  min-height: 100vh;
+  overflow: scroll;
 }
 
-.one {
-  background: #81234e;
-}
 
-.two {
-  background: #df5252;
-}
 
-.three {
-  background: #ff9a56;
-}
 
-.four {
-  background: #371465;
-}
-
-h1 {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  font-size: 80px;
-  letter-spacing: 5px;
-  color: #fff;
-  text-transform: uppercase;
-}
