@@ -83,8 +83,11 @@ display: none;
 	
 <div style="position:fixed; right:300px; top:300px">
 	
-
-	
+<script>
+audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });	
+	</script>	
 
 <audio>
    <source src="https://naarduikkeerher.dk/sick-of-nationalism.mp3">
@@ -115,10 +118,7 @@ display: none;
       ul.dataset.current = current + 1;
     }
   } );
-} );
-audiojs.events.ready(function() {
-    var as = audiojs.createAll();
-  });			
+} );		
 		</script>
 		
 <div class="block" id="container">
