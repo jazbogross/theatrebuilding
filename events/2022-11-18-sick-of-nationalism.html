@@ -58,28 +58,6 @@ ul {
   list-style-type: none;
 }
 			
-#player-container #play-pause {
-  cursor: pointer;
-  text-indent: -999999px;
-  height:40;
-  width: 40;
-  padding: 12px 18px;
-  z-index: 2;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
-    background-repeat: no-repeat!important;
-    background-position: center;
-    background-size: 16px;
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:20px;
-  background-color: none;
-}
-.play {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
-}
-.pause {
-   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTAgMjRoLTZ2LTI0aDZ2MjR6bTEwLTI0aC02djI0aDZ2LTI0eiIvPjwvc3ZnPg==)!important;
-}
 			
 	</style>
 		
@@ -88,31 +66,14 @@ ul {
 	<body>
 
 	
-<script>
-document.getElementById("playAudio").addEventListener("click", function(){
-	var audio = document.getElementById('testAudio');
-  if(this.className == 'is-playing'){
-    this.className = "";
-    this.innerHTML = "Play"
-    audio.pause();
-  }else{
-    this.className = "is-playing";
-    this.innerHTML = "Pause";
-    audio.play();
-  }
-
-});
-
-	</script>	
 
         <div id="wrapper" class="flex-center">
 	
 <div style="position:fixed; right:300px; top:300px">
 	
-<audio id="testAudio" hidden src="https://naarduikkeerher.dk/sick-of-nationalism.mp3" type="audio/mpeg">
-</audio>
+<audio controls controlsList="nodownload noplaybackrate"><source src="https://naarduikkeerher.dk/sick-of-nationalism.mp3" type="audio/mpeg"></audio>
 
-<button id="playAudio">Play</button>
+</audio>
 
 
 </div>
