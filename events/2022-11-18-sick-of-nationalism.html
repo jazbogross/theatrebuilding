@@ -61,8 +61,8 @@ ul {
 #player-container #play-pause {
   cursor: pointer;
   text-indent: -999999px;
-  height:200px;
-  width: 200px;
+  height:40;
+  width: 40;
   padding: 12px 18px;
   z-index: 2;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
@@ -89,25 +89,18 @@ ul {
 
 	
 <script>
-var track = document.getElementById('track');
+document.getElementById("playAudio").addEventListener("click", function(){
+	var audio = document.getElementById('testAudio');
+  if(this.className == 'is-playing'){
+    this.className = "";
+    this.innerHTML = "Play"
+    audio.pause();
+  }else{
+    this.className = "is-playing";
+    this.innerHTML = "Pause";
+    audio.play();
+  }
 
-var controlBtn = document.getElementById('play-pause');
-
-function playPause() {
-    if (track.paused) {
-        track.play();
-        //controlBtn.textContent = "Pause";
-        controlBtn.className = "pause";
-    } else { 
-        track.pause();
-         //controlBtn.textContent = "Play";
-        controlBtn.className = "play";
-    }
-}
-
-controlBtn.addEventListener("click", playPause);
-track.addEventListener("ended", function() {
-  controlBtn.className = "play";
 });
 
 	</script>	
@@ -116,12 +109,10 @@ track.addEventListener("ended", function() {
 	
 <div style="position:fixed; right:300px; top:300px">
 	
-<audio id="track" source src="https://naarduikkeerher.dk/sick-of-nationalism.mp3">
+<audio id="testAudio" hidden src="https://naarduikkeerher.dk/sick-of-nationalism.mp3" type="audio/mpeg">
 </audio>
 
-<div id="player-container">
-  <div id="play-pause" class="play">Play</div>
-</div>	
+<button id="playAudio">Play</button>
 
 
 </div>
