@@ -57,18 +57,39 @@ div.block::-webkit-scrollbar {
 ul {
   list-style-type: none;
 }
-	</style>	
+			
+.audiojs {
+  float:left;
+  width:auto;
+}
+.audiojs .scrubber { 
+display: none; 
+} 
+
+.audiojs .time { 
+display: none; 
+} 
+
+.audiojs .time { 
+display: none; 
+}
+			
+	</style>
+		
+		
    	</head>
 	<body>
         <div id="wrapper" class="flex-center">
 	
 <div style="position:fixed; right:300px; top:300px">
 	
+audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
 
+<audio>
+   <source src="https://naarduikkeerher.dk/sick-of-nationalism.mp3">
 
-<audio controls controlsList="nodownload noplaybackrate"><source src="https://naarduikkeerher.dk/sick-of-nationalism.mp3" type="audio/mpeg"></audio>
-
-</audio>
 	
 </audio>
 </div>
