@@ -168,13 +168,12 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
 <body>
 
-  
-<p>Do you want to do a performance here? Describe your vision - date included - and send it to us. It can be a hybrid between physical and digital or digital only.</p>
+ 
   
 <div class="fcf-body">
 
     <div id="fcf-form">
-    <h3 class="fcf-h3">Contact us</h3>
+    <h3 class="fcf-h3">Do you want to do a performance here? Describe your vision - desired date(s) included - and send it to us.</h3>
 
     <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
         
@@ -207,17 +206,15 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         Simple HTML email form provided by <a href="https://www.majesticform.com" target="_blank">MajesticForm</a>
         </div>
 
-    </form>
-    </div>
-
-</div>
-
-  
+            </form>
+    </div> 
+        </div>
+        
 <?php
 if (isset($_POST['Email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "join@theatrebuilding.com";
+    $email_to = "you@yourdomain.com";
     $email_subject = "New form submissions";
 
     function problem($error)
@@ -281,7 +278,16 @@ if (isset($_POST['Email'])) {
         'X-Mailer: PHP/' . phpversion();
     @mail($email_to, $email_subject, $email_message, $headers);
 ?>
-  
+
+    <!-- include your success message below -->
+
+    Thank you for contacting us. We will be in touch with you very soon.
+
+<?php
+}
+?>
+ 
+
   
 </body>
 </html>
