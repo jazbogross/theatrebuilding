@@ -44,6 +44,7 @@
         unmuteBTN.addEventListener('click', (event) => {
         player.setVolume(1); 
         unmuteBTN.style.display = "none";
+        player.requestFullscreen();
       });
       } else {
         playFrom();
