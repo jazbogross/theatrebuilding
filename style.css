@@ -24,13 +24,6 @@ a:hover {
    
 }
 
-.scrolling-wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-
-}
-
 #wrapper {
     height: 100vh;
 }
