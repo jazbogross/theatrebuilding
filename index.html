@@ -6,28 +6,6 @@
         <meta name="google" content="notranslate" />
    	</head>
 	<body>
-		<script>
-		document.addEventListener( "DOMContentLoaded", function() {
-  // it's a div, that holds your news
-  // it holds ul with news in li elements
-  var div = document.getElementById( "container" );
-  div.addEventListener( "scroll", function() {
-    var max_scroll = this.scrollWidth - this.clientWidth;
-    var current_scroll = this.scrollLeft;
-    var right = 100;
-    if ( current_scroll + right >= max_scroll ) {
-      var ul = document.getElementsByTagName( "ul" )[ 0 ];
-      var current = parseInt( ul.dataset.current, 10 );
-      var li = document.getElementsByTagName( "li" )[ current ];
-      var new_li = li.cloneNode( true );
-      ul.appendChild( new_li );
-      ul.dataset.current = current + 1;
-    }
-  } );
-} );		
-		</script>
-<div class="block" id="container">
-  <ul data-current="0">
 
 		 <div id="wrapper" class="flex-center">
             <div class="flex-center octagon">
@@ -81,11 +59,7 @@
             </div>
 		
         </div>
-				  
- </ul>
-</div>
 
-  <script src="/scrollmemory.js" async></script>
 
 	</body>
     <script src="/titleTranslate.js" async></script>
