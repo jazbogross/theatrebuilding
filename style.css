@@ -21,6 +21,10 @@ a:hover {
     justify-content: center;
     height: 100%;
     width: 100%;
+        margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 #wrapper {
@@ -34,8 +38,4 @@ a:hover {
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
 }
