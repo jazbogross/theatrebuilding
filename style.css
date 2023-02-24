@@ -29,9 +29,6 @@ a:hover {
   overflow-y: hidden;
   white-space: nowrap;
 
-  .card {
-    display: inline-block;
-  }
 }
 
 #wrapper {
