@@ -93,6 +93,30 @@
         });
       }
 
+
+
+    function checkSync() {
+  player.getCurrentTime().then(currentTime => {
+    const now = new Date();
+    const hoursToday = now.getHours();
+    const minutesToday = now.getMinutes();
+    const secondsToday = now.getSeconds();
+    const totalSecondsNow = (hoursToday * 3600) + (minutesToday * 60) + secondsToday;
+
+    player.getDuration().then(videoDuration => {
+      const expectedTime = totalSecondsNow % videoDuration;
+      const difference = Math.abs(expectedTime - currentTime);
+
+      // If the difference is more than a certain threshold, then resync
+      if (difference > 1) {
+        player.setCurrentTime(expectedTime);
+      }
+    });
+  });
+}
+
+setInterval(checkSync, 10000); // checks every 10 seconds
+
     </script>
   </body>
 </html>
