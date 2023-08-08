@@ -101,7 +101,8 @@
     const hoursToday = now.getHours();
     const minutesToday = now.getMinutes();
     const secondsToday = now.getSeconds();
-    const totalSecondsNow = (hoursToday * 3600) + (minutesToday * 60) + secondsToday;
+    const millisecondsToday = now.getMilliseconds();
+    const totalSecondsNow = (hoursToday * 3600000) + (minutesToday * 60000) + (secondsToday * 1000) + millisecondsToday;
 
     player.getDuration().then(videoDuration => {
       const expectedTime = totalSecondsNow % videoDuration;
@@ -110,9 +111,9 @@
       // If the difference is more than a certain threshold, then resync
       if (difference > 1) {
         player.setCurrentTime(expectedTime);
-        cosole.log("video timeing adjusted");
+        console.log("video timeing adjusted");
       } else {
-        cosole.log("video is in sync");
+        console.log("video is in sync");
       }
     });
   });
