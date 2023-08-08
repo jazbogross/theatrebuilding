@@ -102,7 +102,7 @@
     const minutesToday = now.getMinutes();
     const secondsToday = now.getSeconds();
     const millisecondsToday = now.getMilliseconds();
-    const totalSecondsNow = (hoursToday * 3600000) + (minutesToday * 60000) + (secondsToday * 1000) + millisecondsToday;
+    const totalSecondsNow = (hoursToday * 3600) + (minutesToday * 60) + secondsToday;
 
     player.getDuration().then(videoDuration => {
       console.log(videoDuration);
