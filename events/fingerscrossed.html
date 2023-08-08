@@ -110,6 +110,9 @@
       // If the difference is more than a certain threshold, then resync
       if (difference > 1) {
         player.setCurrentTime(expectedTime);
+        cosole.log("video timeing adjusted");
+      } else {
+        cosole.log("video is in sync");
       }
     });
   });
