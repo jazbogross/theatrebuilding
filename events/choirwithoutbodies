@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    	<head> 
-      	<title>theatrebuilding | Sick of Nationalism</title>
+      	<title>theatrebuilding | choir without bodies</title>
 		
           <link rel="stylesheet" href="/event-style.css">
         <meta name="google" content="notranslate" />
@@ -79,7 +79,7 @@ ul {
 </div>
 		
 <p class="vericaltext">
-		A circle of chairs in the middle of the exhibition room of Danish and Nordic Arts 1750-1900 at <a href="https://www.smk.dk/event/smk-fridays-sindets-sansninger/" target="_blank">SMK Friday, Sindets sansninger,  18/11 2022, 16-22 at The National Gallery of Arts in Denmark</a>. A script, circular with no beginning or end point, with an unspecified number of <a href="https://en.wiktionary.org/wiki/spect-actor" target="_blank">spectactors</a>. There is a microphone in front of each chair picking up the voices of the <a href="https://en.wiktionary.org/wiki/spect-actor" target="_blank">spectactors</a>. The <a href="https://en.wiktionary.org/wiki/spect-actor" target="_blank">spectactors</a> can enter and leave the circle whenever they want, they improvise their ways together.
+		an undefined number of spectactors in the black box at YC festival <a href="https://www.haut.dk" target="_blank">. their phones light up their faces. they enter and leave whenever they want. they improvise their ways in the space together. four microphones are recording the sound of their voices.
 		</p>
 
 		<script>
@@ -106,16 +106,17 @@ ul {
 <div class="block" id="container">
   <ul data-current="0">
 
-<li><p class=”bread”> <a href=https://en.wiktionary.org/wiki/spect-actor target=”_blank”>spectactor<span>&#58;</span></a> I am a fragment of a we that is fighting<hr width="15%" size="4" align="right" color="fuchsia"></p></li>
-<li><p class=”bread”> <a href=https://en.wiktionary.org/wiki/spect-actor target=”_blank”>spectactor<span>&#58;</span></a>I
+<li><p class=”bread”> <a href=https://en.wiktionary.org/wiki/spect-actor target=”_blank”>spectactor<span>&#58;</span></a> I am a fragment of a we that is fighting
 
-spectactor: am
+</p></li><li><p class=”bread”> <a href=https://en.wiktionary.org/wiki/spect-actor target=”_blank”>spectactor<span>&#58;</span></a>I
 
-spectactor: in a disrupted state
+</p></li><li><p class=”bread”> <a href=https://en.wiktionary.org/wiki/spect-actor target=”_blank”>spectactor<span>&#58;</span></a>am
 
-spectactor: of
+</p></li><li><p class=”bread”> <a href=https://en.wiktionary.org/wiki/spect-actor target=”_blank”>spectactor<span>&#58;</span></a>in a disrupted state
 
-spectactor: being
+</p></li><li><p class=”bread”> <a href=https://en.wiktionary.org/wiki/spect-actor target=”_blank”>spectactor<span>&#58;</span></a>of
+
+</p></li><li><p class=”bread”> <a href=https://en.wiktionary.org/wiki/spect-actor target=”_blank”>spectactor<span>&#58;</span></a>being
 
 spectactor: breathing
 
@@ -164,3 +165,16 @@ spectactor: where do you begin?
 spectactor: where do I end?
 
 spectactor: where do you end?
+
+ </ul>
+</div>
+
+  <script src="/scrollmemory.js" async></script>
+
+
+            <!-- din html kode her -->
+
+
+        </div>
+	</body>
+</html>
